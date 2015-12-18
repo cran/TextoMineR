@@ -1,0 +1,74 @@
+import( 
+	FactoMineR,
+	tm,  
+	stringr,
+	gdata, 
+    MASS
+      
+)
+
+importFrom("grDevices", "col2rgb", "dev.new", "palette", "rgb")
+  importFrom("graphics", "abline", "arrows", "barplot", "layout",
+             "layout.show", "legend", "lines", "locator", "par", "plot",
+             "points", "segments", "text")
+  importFrom("stats", "as.hclust", "cutree", "dhyper", "dist", "hclust",
+             "kmeans", "median", "phyper", "pnorm", "qnorm",
+             "rect.hclust")
+  importFrom("utils", "combn")
+
+
+export(
+ "MacroBiblio",         
+ "print.MacroBiblio",
+ "summary.MacroBiblio",   
+ "DocWordTable",        
+ "print.DocWordTable",  
+ "summary.DocWordTable",
+ "DocVarTable",         
+ "TxCA",
+ "print.TxCA",                 
+ "summary.TxCA",                     
+ "SegmentsRep",        
+ "print.SegmentsRep",  
+ "summary.SegmentsRep",
+ "SegmentsSup",        
+ "CharDocWord",               
+ "TxCHCPC",             
+ "print.TxCHCPC",       
+ "TxCharClust",                                       
+ "MDocWordTable",       
+ "TxMFACT",             
+ "summary.TxMFACT",
+  print.TxMFACT,     
+ "TxCaGalt",            
+ "print.TxCaGalt",      
+ "summary.TxCaGalt",    
+ "plot.TxCaGalt",                            
+ "MacroTxChrono",
+  "summary.MacroTxChrono",
+   "print.MacroTxChrono",            
+ "MacroCaHcpc", 
+"print.MacroCaHcpc" 
+	)
+
+
+S3method(plot, TxCaGalt)
+S3method(print, MacroBiblio)
+S3method(print, DocWordTable)
+S3method(print, TxCA)
+S3method(print, SegmentsRep)
+S3method(print, TxCHCPC)
+S3method(print, TxCaGalt)
+S3method(print, MacroTxChrono)
+S3method(print, MacroCaHcpc)
+S3method(print, TxMFACT)
+
+
+
+S3method(summary, MacroBiblio)
+S3method(summary, DocWordTable)
+S3method(summary, SegmentsRep)
+S3method(summary, TxMFACT)
+S3method(summary, TxCaGalt)
+S3method(summary, MacroTxChrono)
+S3method(summary, TxCA)
